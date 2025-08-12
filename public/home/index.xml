@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Homes on</title><link>http://localhost:1313/home/</link><description>Recent content in Homes on</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/home/index.xml" rel="self" type="application/rss+xml"/><item><title>Home</title><link>http://localhost:1313/home/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/home/home/</guid><description>&lt;section id="showcase" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+ &lt;div id="main-content">
+ 
+
+
+ 
+
+ &lt;div class="showcase-section row flex-column-reverse flex-md-row rad-fade-down rad-waiting rad-animate">
+ &lt;div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+ &lt;h1 class="display-1">
+ Hi, my name is Javier Serrano
+ &lt;/h1>
+ &lt;h2 class="display-5">
+ &lt;span>I'm an Embedded Software Developer specialized in DSP, AI and Power Electronics&lt;/span>
+ &lt;/h2>
+ &lt;div class="lead">
+ 
+ &lt;/div>
+ 
+ &lt;a
+ href="mailto:Javi8799@gmail.com"
+ class="btn btn-primary"
+ >
+ &lt;i class="icon-email">&lt;/i>
+ Need a Freelance?
+ &lt;/a>
+ 
+ &lt;/div>
+ &lt;div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 profile-image">
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+ 
+
+
+ &lt;picture class="">
+ 
+ 
+
+ &lt;source srcset="http://localhost:1313/images/about/user-picture_hu_2e7cca1d29a050af.webp 1x, http://localhost:1313/images/about/user-picture_hu_4273b3b672c31d1b.webp 2x" type="image/webp" />
+ &lt;source srcset="http://localhost:1313/images/about/user-picture_hu_68fc51693ea3426e.png 1x, http://localhost:1313/images/about/user-picture_hu_a5e373a97295ca15.png 2x" type="image/png">
+
+ &lt;img
+ width="945"
+ height="945"
+ class="lozad img-responsive "
+ data-src="http://localhost:1313/images/about/user-picture_hu_68fc51693ea3426e.png"
+ alt=''
+ src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+ loading="lazy"
+ decoding="async"
+ />
+ &lt;/picture>
+
+
+
+
+ &lt;/div>
+ &lt;div class="col-12 inner-content">
+ 
+
+
+
+
+
+&lt;div class="container">
+ &lt;div class="row platform-links shortcode">
+ &lt;div class="col-12">
+ 
+ 
+ &lt;a
+ href="https://linkedin.com/in/javier-garciaserrano"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="linkedin"
+ >&lt;i class="icon-linkedin">&lt;/i>
+ &lt;/a>
+
+ 
+ 
+ &lt;a
+ href="https://github.com/javiScriptGarcia"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-github"
+ >&lt;i class="icon-square-github">&lt;/i>
+ &lt;/a>
+
+ 
+ 
+ &lt;a
+ href="mailto:Javi8799@gmail.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="envelope"
+ >&lt;i class="icon-envelope">&lt;/i>
+ &lt;/a>
+
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+
+
+
+ &lt;/div>
+ 
+
+ &lt;/div>
+
+
+ &lt;div class="row platform-links">
+ &lt;div class="col-12">&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ 
+&lt;/section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;section id="about" class="section rad-animation-group pb-0">
+ &lt;div class="rad-fade-down">
+ &lt;div class="row d-flex flex-column-reverse flex-md-row">
+ &lt;div class="about__profile-picture col-12 col-md-6">
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+ 
+
+
+ &lt;picture class="">
+ 
+ 
+
+ &lt;source srcset="http://localhost:1313/images/about/working-picture_hu_62f150ba2dab173f.webp 1x, http://localhost:1313/images/about/working-picture_hu_fe067534d735aabc.webp 2x" type="image/webp" />
+ &lt;source srcset="http://localhost:1313/images/about/working-picture_hu_34dbefc4f61fa47a.png 1x, http://localhost:1313/images/about/working-picture_hu_9302a71f91ecbcea.png 2x" type="image/png">
+
+ &lt;img
+ width="958"
+ height="958"
+ class="lozad img-responsive image-left-overflow"
+ data-src="http://localhost:1313/images/about/working-picture_hu_34dbefc4f61fa47a.png"
+ alt=''
+ src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+ loading="lazy"
+ decoding="async"
+ />
+ &lt;/picture>
+
+ &lt;/div>
+ &lt;div class="col-12 col-md-6 my-auto">
+ &lt;h1>What I do&lt;/h1>
+ &lt;div class="about-me content lead">
+ I work as a freelance for companies and teams of all sizes. I can dive into any project and technology, and play different roles in a team. My years enrolled in different tasks and companies turned me into a highly technical and creative problem-solver. &lt;br/>&lt;br/>I am passionate on what I do, and always stay commited with my given purpose. I will always look further ahead to ease the work of my colleagues and leaders, and make communication a priority for success.&lt;br/>&lt;br/>My experience was earned working on many different projects, as well as studying powerful technologies, both during my academic and working years. I am a naturally-curious person, and I am always excited to learn more.&lt;br/>&lt;br/>I am happy to share with you a deeper insight of my background. You can find it in this blog and &lt;a href="http://localhost:1313/files/CV_DSP.pdf" target="_blank" download>downloading my CV!&lt;/a>&lt;br/>
+ &lt;/div>
+ 
+ &lt;a href="http://localhost:1313/skills" target="_blank" class="btn btn-primary">
+ &lt;i class="icon-user">&lt;/i>
+ Check my skills
+ &lt;/a>
+ 
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+
+
+
+&lt;section
+ id="education"
+ class="section section--border-bottom rad-animation-group"
+>
+ &lt;div class="container-education">
+ &lt;div class="row rad-fade-down">
+ &lt;div class="col-12">
+ &lt;h2>Education&lt;/h2>
+ &lt;div class="row pt-2 pt-md-4">
+ 
+ &lt;div class="col-12 col-sm-6 mb-4 mb-sm-0">
+ &lt;div class="education">
+ &lt;div class="education__date">2024 – 2025&lt;/div>
+ &lt;div class="education__title">Universidad de Murcia&lt;/div>
+ &lt;div class="education__degree">Master of Engineering, Artificial Intelligence&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="col-12 col-sm-6 mb-4 mb-sm-0">
+ &lt;div class="education">
+ &lt;div class="education__date">2017 - 2022&lt;/div>
+ &lt;div class="education__title">Universitat Politècnica de València&lt;/div>
+ &lt;div class="education__degree">Bachelor of Engineering, Industrial Electronics and Automation Engineering&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ 
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+&lt;section id="experience-single" class="section-experience section section--border-bottom rad-animation-group flex-grow-1">
+ &lt;div class="row flex-column-reverse flex-md-row rad-fade-down">
+ &lt;div class="experience-list col-12 col-md-6">
+ &lt;h2>
+ 
+ Work Experience
+ 
+ &lt;/h2>
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ &lt;div class="experience">
+ &lt;a href="http://localhost:1313/experience/job-4/" class="experience__link">
+ &lt;div class="experience__header">
+ 
+ 
+ 
+ &lt;img 
+ src="http://localhost:1313/images/experience/DSPecialist_Logo_hu_4a201a841da4c602.webp" 
+ alt=" logo"
+ class="experience__company-logo"
+ loading="lazy"
+ />
+ 
+ &lt;div class="experience__meta">
+ &lt;div class="experience__date">2024-now&lt;/div>
+ &lt;div class="experience__title">Embedded DSP Engineer&lt;/div>
+ &lt;div class="experience__company">
+ Freelance.
+ &lt;span class="experience__location">Murcia, Spain&lt;/span>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="experience__description d-none d-print-block">
+ &lt;h1>4th Job&lt;/h1>
+ My work as a freelance As a freelancer, I worked on two major projects.
+Project #1: an innovative real-time reverb-canceling embedded system for speaker correction using deep learning and reinforcement learning. In this project I did the full system design on STM32H7, from concept to prototype. It included a Qualcomm QCC chip for top-quality Bluetooth audio. Most development focused on building fast DSP algorithms for the ARM microcontroller and pushing performance to the limit for large convolutions. At the same time, I programmed a CNN in Python with TensorFlow for other tasks.
+Project #2: Development of a wireless sensing system using AI and RF. This project is confidential under NDA protection.
+
+ &lt;/div>
+ &lt;/div>
+ &lt;/a>
+ &lt;/div>
+ 
+ &lt;div class="experience">
+ &lt;a href="http://localhost:1313/experience/job-3/" class="experience__link">
+ &lt;div class="experience__header">
+ 
+ 
+ 
+ &lt;img 
+ src="http://localhost:1313/images/experience/Versa_Logo_hu_fe7622a97c71dcb.webp" 
+ alt=" logo"
+ class="experience__company-logo"
+ loading="lazy"
+ />
+ 
+ &lt;div class="experience__meta">
+ &lt;div class="experience__date">2023-2024&lt;/div>
+ &lt;div class="experience__title">Firmware Engineer&lt;/div>
+ &lt;div class="experience__company">
+ Versa Design.
+ &lt;span class="experience__location">Valencia, Spain&lt;/span>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="experience__description d-none d-print-block">
+ &lt;h1>3rd Job&lt;/h1>
+ Firmware Engineer As a Firmware Engineer, I worked with STM32 and ESP32 to develop and maintain firmware for consumer electronics. Part of my job was to develop a system for mass-programming custom PCBs.
+All the projects I worked on focused on cost optimization, so the microcontrollers had very limited resources. For that reason, I used low-level APIs and bare-metal programming for STM32, and FreeRTOS for ESP32.
+
+ &lt;/div>
+ &lt;/div>
+ &lt;/a>
+ &lt;/div>
+ 
+ &lt;div class="experience">
+ &lt;a href="http://localhost:1313/experience/job-2/" class="experience__link">
+ &lt;div class="experience__header">
+ 
+ 
+ 
+ &lt;img 
+ src="http://localhost:1313/images/experience/Zigor_Logo_hu_e69adb3e1d7bc63.webp" 
+ alt=" logo"
+ class="experience__company-logo"
+ loading="lazy"
+ />
+ 
+ &lt;div class="experience__meta">
+ &lt;div class="experience__date">2022-2023&lt;/div>
+ &lt;div class="experience__title">Signal Processing and R&amp;amp;D Engineer&lt;/div>
+ &lt;div class="experience__company">
+ Zigor Research &amp;amp; Development.
+ &lt;span class="experience__location">Valencia, Spain&lt;/span>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="experience__description d-none d-print-block">
+ &lt;h1>2nd Job&lt;/h1>
+ Signal Processing and R&amp;amp;D Engineer During my time at Zigor I had an important role as the main signal processing engineer and PCB designer in the development of various power converters and power electronic devices.
+I was in charge of the hardware development of a power supply with over 10 kV insulation barriers, where I designed essential parts like analog and EMI filters, and implemented digital filters in the microcontroller. I also led the whole PCB design validation and testing using Altium.
+I also took part in other power converter projects, where I designed PCBs for high-speed signals, did hardware simulations, designed analog and combinational circuits, and did experimental research.
+
+ &lt;/div>
+ &lt;/div>
+ &lt;/a>
+ &lt;/div>
+ 
+ &lt;div class="experience">
+ &lt;a href="http://localhost:1313/experience/job-1/" class="experience__link">
+ &lt;div class="experience__header">
+ 
+ 
+ 
+ &lt;img 
+ src="http://localhost:1313/images/experience/UPV_Logo_hu_559d6b8e7618de8a.webp" 
+ alt=" logo"
+ class="experience__company-logo"
+ loading="lazy"
+ />
+ 
+ &lt;div class="experience__meta">
+ &lt;div class="experience__date">2022-2022&lt;/div>
+ &lt;div class="experience__title">Junior intern, Embedded Software / IDM - UPV&lt;/div>
+ &lt;div class="experience__company">
+ Universitat Politècnica de València.
+ &lt;span class="experience__location">Valencia, Spain&lt;/span>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="experience__description d-none d-print-block">
+ &lt;h1>1st Job&lt;/h1>
+ R&amp;amp;D Scholarship, Embedded Software As a Junior Intern at the Universitat Politècnica de València, I had the chance to work on different projects that helped me build my technical and professional skills. Working with experienced engineers and PhDs, I contributed to the development of research devices.
+During the internship, I was asked to write firmware in C for communicating several Texas Instruments microcontrollers over a single serial line. I also did extensive research on minimizing transistor losses in power converters and worked on industrial Windows software development.
+I was also involved in firmware tasks for ESP32 and TI devices, mostly communicating devices using I2C, MODBUS TCP/IP, RS485, and UART.
+
+ &lt;/div>
+ &lt;/div>
+ &lt;/a>
+ &lt;/div>
+ 
+
+ 
+ &lt;/div>
+ &lt;div class="experience-description col-12 col-md-6">
+ 
+ 
+
+
+
+
+
+
+
+
+
+&lt;div class="container-experience">
+ &lt;div class="row">
+ &lt;h2>Professional Experience&lt;/h2>
+ &lt;div class="lead">&lt;/div>
+ &lt;/div>
+
+ &lt;div class="row">
+ 
+ &lt;div class="col-12 col-lg-4">
+ &lt;a
+ href='https://www.linkedin.com/in/adrianmoreno/'
+ class="btn btn-primary btn-block w-100"
+ target="_blank"
+ rel="noopener noreferrer"
+ >
+ 
+ LinkedIn
+ &lt;i class="icon-arrow-right">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ 
+
+ 
+
+ 
+ &lt;/div>
+&lt;/div>
+
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+
+
+
+
+
+
+
+
+&lt;section id="experience-list-shortcode" class="section-experience section section--border-bottom rad-animation-group flex-grow-1 ">
+ &lt;div class="row flex-column-reverse flex-md-row rad-fade-down">
+ &lt;div class="experience-list col-12 mt-5 mt-sm-0">
+ 
+ &lt;h2 class="section__title mb-4">Experience (as list)&lt;/h2>
+ 
+ 
+ 
+
+ 
+
+ 
+ &lt;div class="experience row">
+ &lt;div class="experience__header col-12 col-md-3 d-flex align-items-start">
+ 
+ 
+ 
+ &lt;img src="http://localhost:1313/images/experience/DSPecialist_Logo_hu_4a201a841da4c602.webp" alt=" logo"
+ class="experience__company-logo" loading="lazy">
+ 
+ &lt;div class="experience__meta">
+ &lt;div class="experience__date">2024-now&lt;/div>
+ &lt;div class="experience__title">Embedded DSP Engineer&lt;/div>
+ &lt;div class="experience__company">Freelance. &lt;span class="experience__location">
+ Murcia, Spain&lt;/span>&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="experience__description d-print-block col-12 col-md-9 mt-3 mt-md-0">
+ &lt;h1>4th Job&lt;/h1>
+ &lt;h2 id="my-work-as-a-freelance">My work as a freelance&lt;/h2>
+&lt;p>As a freelancer, I worked on two major projects.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>http://localhost:1313/</link><description>Recent content on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 25 Jul 2025 09:53:42 +0200</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Create your own version of the site</title><link>http://localhost:1313/blog/getting-started/</link><pubDate>Tue, 11 Feb 2025 14:38:33 +0200</pubDate><guid>http://localhost:1313/blog/getting-started/</guid><description>&lt;p>This article is a guide to help you create your own version of the site using &lt;a href="https://github.com/zetxek/adritian-free-hugo-theme">Adritian&lt;/a>. It will cover the main steps to get started with the theme, and how to customize it to your needs.&lt;/p>
+&lt;h3 id="creating-a-site">Creating a site&lt;/h3>
+&lt;p>This theme is for the content management system &lt;a href="https://gohugo.io/">Hugo&lt;/a>, so that will be a pre-requirement.
+Make sure that you install the &lt;code>extended&lt;/code> version of Hugo, as the theme uses SCSS for styling, as well as image optimization.&lt;/p></description></item><item><title>How to Add Custom Icons to the Adritian Theme</title><link>http://localhost:1313/blog/new-icons/</link><pubDate>Fri, 28 Feb 2025 08:05:05 +0100</pubDate><guid>http://localhost:1313/blog/new-icons/</guid><description>&lt;h1 id="how-to-add-custom-icons-to-the-adritian-theme">How to Add Custom Icons to the Adritian Theme&lt;/h1>
+
+
+
+
+
+&lt;div class="table-of-contents">
+ 
+ &lt;h2 class="toc-heading">Table of Contents&lt;/h2>
+ 
+ &lt;div class="toc-content">
+ &lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#overview">Overview&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#step-1-export-current-configuration">Step 1: Export Current Configuration&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#step-2-import-configuration-to-fontello">Step 2: Import Configuration to Fontello&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#step-3-add-new-icons">Step 3: Add New Icons&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#step-4-download-updated-font">Step 4: Download Updated Font&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#step-5-option-1-update-theme-files-manually">Step 5 (option 1): Update Theme Files Manually&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#step-5-option-2-update-theme-files-with-npm-script">Step 5 (option 2): Update Theme Files with npm script&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#step-6-using-the-new-icon">Step 6: Using the New Icon&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#example-usage">Example Usage&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#troubleshooting">Troubleshooting&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#icons-not-displaying">Icons Not Displaying&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#icons-show-as-squares">Icons Show as Squares&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#build-errors">Build Errors&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#best-practices">Best Practices&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#additional-resources">Additional Resources&lt;/a>&lt;/li>
+ &lt;/ul>
+&lt;/nav>
+ &lt;/div>
+&lt;/div>
+ 
+&lt;p>This guide will walk you through adding custom icons to your Adritian Hugo theme. Whether you need new social media icons, brand logos, or custom symbols, follow these steps to integrate them seamlessly.&lt;/p></description></item><item><title>Icons</title><link>http://localhost:1313/blog/icons/</link><pubDate>Fri, 28 Feb 2025 08:05:05 +0100</pubDate><guid>http://localhost:1313/blog/icons/</guid><description>&lt;p>The theme has multiple icons available for use.&lt;/p>
+&lt;p>You can see them rendered here:&lt;/p>
+&lt;ul>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="threads"
+ >&lt;i class="icon-threads">&lt;/i>
+&lt;/a>
+ &lt;code>threads&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="bluesky"
+ >&lt;i class="icon-bluesky">&lt;/i>
+&lt;/a>
+ &lt;code>bluesky&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="x-twitter"
+ >&lt;i class="icon-x-twitter">&lt;/i>
+&lt;/a>
+ &lt;code>x-twitter&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="email"
+ >&lt;i class="icon-email">&lt;/i>
+&lt;/a>
+ &lt;code>email&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="user"
+ >&lt;i class="icon-user">&lt;/i>
+&lt;/a>
+ &lt;code>user&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="table-list"
+ >&lt;i class="icon-table-list">&lt;/i>
+&lt;/a>
+ &lt;code>table-list&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="download"
+ >&lt;i class="icon-download">&lt;/i>
+&lt;/a>
+ &lt;code>download&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="circle-info"
+ >&lt;i class="icon-circle-info">&lt;/i>
+&lt;/a>
+ &lt;code>circle-info&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-twitter"
+ >&lt;i class="icon-square-twitter">&lt;/i>
+&lt;/a>
+ &lt;code>square-twitter&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-facebook"
+ >&lt;i class="icon-square-facebook">&lt;/i>
+&lt;/a>
+ &lt;code>square-facebook&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="linkedin"
+ >&lt;i class="icon-linkedin">&lt;/i>
+&lt;/a>
+ &lt;code>linkedin&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-github"
+ >&lt;i class="icon-square-github">&lt;/i>
+&lt;/a>
+ &lt;code>square-github&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="circle-arrow-left"
+ >&lt;i class="icon-circle-arrow-left">&lt;/i>
+&lt;/a>
+ &lt;code>circle-arrow-left&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="circle-arrow-right"
+ >&lt;i class="icon-circle-arrow-right">&lt;/i>
+&lt;/a>
+ &lt;code>circle-arrow-right&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="circle-arrow-up"
+ >&lt;i class="icon-circle-arrow-up">&lt;/i>
+&lt;/a>
+ &lt;code>circle-arrow-up&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="circle-arrow-down"
+ >&lt;i class="icon-circle-arrow-down">&lt;/i>
+&lt;/a>
+ &lt;code>circle-arrow-down&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="quote-left"
+ >&lt;i class="icon-quote-left">&lt;/i>
+&lt;/a>
+ &lt;code>quote-left&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="face-smile"
+ >&lt;i class="icon-face-smile">&lt;/i>
+&lt;/a>
+ &lt;code>face-smile&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-arrow-up-right"
+ >&lt;i class="icon-square-arrow-up-right">&lt;/i>
+&lt;/a>
+ &lt;code>square-arrow-up-right&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="youtube"
+ >&lt;i class="icon-youtube">&lt;/i>
+&lt;/a>
+ &lt;code>youtube&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-xing"
+ >&lt;i class="icon-square-xing">&lt;/i>
+&lt;/a>
+ &lt;code>square-xing&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="instagram"
+ >&lt;i class="icon-instagram">&lt;/i>
+&lt;/a>
+ &lt;code>instagram&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="dribbble"
+ >&lt;i class="icon-dribbble">&lt;/i>
+&lt;/a>
+ &lt;code>dribbble&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="behance"
+ >&lt;i class="icon-behance">&lt;/i>
+&lt;/a>
+ &lt;code>behance&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="file-pdf"
+ >&lt;i class="icon-file-pdf">&lt;/i>
+&lt;/a>
+ &lt;code>file-pdf&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="codepen"
+ >&lt;i class="icon-codepen">&lt;/i>
+&lt;/a>
+ &lt;code>codepen&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="yelp"
+ >&lt;i class="icon-yelp">&lt;/i>
+&lt;/a>
+ &lt;code>yelp&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="cloud-arrow-down"
+ >&lt;i class="icon-cloud-arrow-down">&lt;/i>
+&lt;/a>
+ &lt;code>cloud-arrow-down&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="medium"
+ >&lt;i class="icon-medium">&lt;/i>
+&lt;/a>
+ &lt;code>medium&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="stack-overflow"
+ >&lt;i class="icon-stack-overflow">&lt;/i>
+&lt;/a>
+ &lt;code>stack-overflow&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="meetup"
+ >&lt;i class="icon-meetup">&lt;/i>
+&lt;/a>
+ &lt;code>meetup&lt;/code>&lt;/li>
+&lt;li>
+ 
+&lt;a
+ href="https://example.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="tiktok"
+ >&lt;i class="icon-tiktok">&lt;/i>
+&lt;/a>
+ &lt;code>tiktok&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>You can use them in several ways.&lt;/p></description></item><item><title>DSP Specialist at Intellisense</title><link>http://localhost:1313/projects/intellisense/</link><pubDate>Fri, 25 Jul 2025 09:53:42 +0200</pubDate><guid>http://localhost:1313/projects/intellisense/</guid><description>&lt;p>IntelliSense is a company focused in providing wireless sensing solutions.&lt;br/>I had an important role developing a wireless sensing system using AI and RF. My technical tasks consisted in designing, testing and implementing DSP pipelines in the system.&lt;/p></description></item><item><title>Theme shortcodes</title><link>http://localhost:1313/blog/shortcodes/</link><pubDate>Fri, 14 Feb 2025 14:38:33 +0200</pubDate><guid>http://localhost:1313/blog/shortcodes/</guid><description>&lt;p>Shortcodes are a convenient &lt;a href="https://gohugo.io/content-management/shortcodes/">functionality of Hugo&lt;/a>, allowing you to embed templates or layouts within other content.&lt;/p>
+&lt;p>Some of the example built-in shortcodes are Instagram posts, YouTube videos, QR codes, etc. You can find &lt;a href="https://gohugo.io/content-management/shortcodes/#embedded">the full list in the official docs&lt;/a>.&lt;/p>
+&lt;p>The theme provides custom shortcodes to allow you to customize your landing page as you want:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>toc&lt;/code>: Generates a styled table of contents from page headings.&lt;/li>
+&lt;li>&lt;code>education-list&lt;/code>: Displays a list of educational qualifications.&lt;/li>
+&lt;li>&lt;code>experience-list&lt;/code>: Shows a list of professional experiences.&lt;/li>
+&lt;li>&lt;code>platform-links&lt;/code>: Embeds links to various platforms with icons.&lt;/li>
+&lt;li>&lt;code>newsletter-section&lt;/code>: Adds a section for newsletter subscription.&lt;/li>
+&lt;li>&lt;code>link&lt;/code>: Creates a hyperlink with an icon.&lt;/li>
+&lt;li>&lt;code>experience-section&lt;/code>: Inserts a detailed experience section.&lt;/li>
+&lt;li>&lt;code>contact-section&lt;/code>: Adds a contact information section, with a customizable form and information.&lt;/li>
+&lt;li>&lt;code>client-and-work-section&lt;/code>: Displays a section for clients and work.&lt;/li>
+&lt;li>&lt;code>about-section&lt;/code>: About section, with image, buttons for call to action and image.&lt;/li>
+&lt;li>&lt;code>testimonial-section&lt;/code>: Adds references from customers, colleagues, etc.&lt;/li>
+&lt;li>&lt;code>showcase&lt;/code>: two-column block with a full-width image to the left, and a text snippet to the right. Great for a call to action or introduction of the person (assuming it&amp;rsquo;s a personal website).&lt;/li>
+&lt;li>&lt;code>text-section&lt;/code>: utility shortcode used to render text in some parts of the theme where it would otherwise be full-width, appearing &amp;ldquo;too floaty&amp;rdquo;. See &lt;a href="https://github.com/zetxek/adritian-free-hugo-theme/issues/260">the github issue #260 for context&lt;/a>.&lt;/li>
+&lt;li>&lt;code>spacer&lt;/code>: Adds vertical spacing before the next element.&lt;/li>
+&lt;/ul>
+&lt;p>The shortcodes can be customized with different arguments:&lt;/p></description></item><item><title>Other installation methods</title><link>http://localhost:1313/blog/other-installation-methods/</link><pubDate>Tue, 11 Feb 2025 14:38:33 +0200</pubDate><guid>http://localhost:1313/blog/other-installation-methods/</guid><description>&lt;p>This is a guide that extends the default instructions offered in &lt;a href="https://github.com/zetxek/adritian-free-hugo-theme/blob/main/README.md">the theme readme&lt;/a>.&lt;/p>
+&lt;h3 id="manual-configuration">Manual configuration&lt;/h3>
+&lt;p>If you prefer to manually set your site, you need to replace the contents of your config file (&lt;code>hugo.toml&lt;/code>) file by these:&lt;/p>
+&lt;details>
+&lt;summary>hugo.toml configuration&lt;/summary>
+&lt;pre tabindex="0">&lt;code>baseURL = &amp;#34;&amp;lt;your website url&amp;gt;&amp;#34;
+languageCode = &amp;#34;en&amp;#34;
+
+[module]
+[module.hugoVersion]
+# We use hugo.Deps to list dependencies, which was added in Hugo 0.92.0
+min = &amp;#34;0.92.0&amp;#34;
+
+[[module.imports]]
+path=&amp;#34;github.com/zetxek/adritian-free-hugo-theme&amp;#34;
+
+## Base mounts - so your site&amp;#39;s assets are available
+ [[module.mounts]]
+ source = &amp;#34;archetypes&amp;#34;
+ target = &amp;#34;archetypes&amp;#34;
+
+ [[module.mounts]]
+ source = &amp;#34;assets&amp;#34;
+ target = &amp;#34;assets&amp;#34;
+
+ [[module.mounts]]
+ source = &amp;#34;i18n&amp;#34;
+ target = &amp;#34;i18n&amp;#34;
+
+ [[module.mounts]]
+ source = &amp;#34;layouts&amp;#34; 
+ target = &amp;#34;layouts&amp;#34;
+
+ [[module.mounts]]
+ source = &amp;#34;static&amp;#34;
+ target = &amp;#34;static&amp;#34;
+
+# The following mounts are required for the theme to be able to load bootstrap
+# Remember also to copy the theme&amp;#39;s `package.json` to your site, and run `npm install`
+[[module.mounts]]
+ source = &amp;#34;node_modules/bootstrap/scss&amp;#34;
+ target = &amp;#34;assets/scss/bootstrap&amp;#34;
+
+[[module.mounts]]
+ source = &amp;#34;node_modules/bootstrap/dist/js&amp;#34;
+ target = &amp;#34;assets/js/bootstrap&amp;#34;
+
+[[module.mounts]]
+ source = &amp;#34;node_modules/bootstrap/dist/js/bootstrap.bundle.min.js&amp;#34;
+ target = &amp;#34;assets/js/vendor/bootstrap.bundle.min.js&amp;#34;
+
+## Optional, if you want print improvements (to PDF/printed)
+[[module.mounts]]
+source = &amp;#34;node_modules/bootstrap-print-css/css/bootstrap-print.css&amp;#34;
+target = &amp;#34;assets/css/bootstrap-print.css&amp;#34;
+
+[params]
+
+ title = &amp;#39;Your website title&amp;#39;
+ description = &amp;#39;Your website description&amp;#39;
+ sections = [&amp;#34;showcase&amp;#34;, &amp;#34;about&amp;#34;, &amp;#34;education&amp;#34;, &amp;#34;experience&amp;#34;, &amp;#34;client-and-work&amp;#34;, &amp;#34;testimonial&amp;#34;, &amp;#34;contact&amp;#34;, &amp;#34;newsletter&amp;#34;]
+
+ # If you want to display an image logo in the header, you can add it here
+ # logo = &amp;#39;/img/hugo.svg&amp;#39;
+ homepageExperienceCount = 6
+
+ [params.analytics]
+ ## Analytics parameters.
+ ### Supported so far: Vercel (Page Insights, Analytics)
+ ### And Google (Tag Manager, Analytics)
+
+ # controls vercel page insights - disabled by default
+ # to enable, just set to true
+ vercelPageInsights = false
+ vercelAnalytics = false
+ 
+ # google analytics and tag manager. to enable, set &amp;#34;enabled&amp;#34; to true
+ # and add the tracking code (UA-something for analytics, GTM-something for tag manager)
+ [params.analytics.googleAnalytics]
+ code = &amp;#34;UA-XXXXX-Y&amp;#34;
+ enabled = false
+ [params.analytics.googleTagManager]
+ code = &amp;#34;GTM-XXXXX&amp;#34;
+ enabled = false
+
+[build]
+ [build.buildStats]
+ disableClasses = false
+ disableIDs = false
+ disableTags = false
+ enable = true
+
+[params.languages.selector.disable]
+ footer = false
+
+[languages]
+ [languages.en]
+ disabled = false
+ languageCode = &amp;#39;en&amp;#39;
+ languageDirection = &amp;#39;ltr&amp;#39;
+ languageName = &amp;#39;English&amp;#39;
+ title = &amp;#39;&amp;#39;
+ weight = 0
+
+ [languages.en.menus]
+ [[languages.en.menus.header]]
+ name = &amp;#39;About&amp;#39;
+ URL = &amp;#39;#about&amp;#39;
+ weight = 2
+ [[languages.en.menus.header]]
+ name = &amp;#39;Portfolio&amp;#39;
+ URL = &amp;#39;#portfolio&amp;#39;
+ weight = 3
+ # [[languages.en.menus.header]]
+ # name = &amp;#34;Experience&amp;#34;
+ # URL = &amp;#34;#experience&amp;#34;
+ # weight = 4
+
+ [[languages.en.menus.header]]
+ name = &amp;#34;Blog&amp;#34;
+ URL = &amp;#34;/blog&amp;#34;
+ weight = 5
+
+ [[languages.en.menus.header]]
+ name = &amp;#34;Contact&amp;#34;
+ URL = &amp;#34;#contact&amp;#34;
+ weight = 6
+
+ [[languages.en.menus.footer]]
+ name = &amp;#34;About&amp;#34;
+ URL = &amp;#34;#about&amp;#34;
+ weight = 2
+
+ [[languages.en.menus.footer]]
+ name = &amp;#34;Portfolio&amp;#34;
+ URL = &amp;#34;#portfolio&amp;#34;
+ weight = 3
+
+ [[languages.en.menus.footer]]
+ name = &amp;#34;Contact&amp;#34;
+ URL = &amp;#34;#contact&amp;#34;
+ weight = 4
+
+
+ [languages.es]
+ disabled = false
+ languageCode = &amp;#39;es&amp;#39;
+ languageDirection = &amp;#39;ltr&amp;#39;
+ languageName = &amp;#39;Español&amp;#39;
+ title = &amp;#39;&amp;#39;
+ weight = 0
+ [[languages.es.menus.header]]
+ name = &amp;#39;Sobre mi&amp;#39;
+ URL = &amp;#39;/es/#about&amp;#39;
+ weight = 2
+ [[languages.es.menus.header]]
+ name = &amp;#39;Portfolio&amp;#39;
+ URL = &amp;#39;/es/#portfolio&amp;#39;
+ weight = 3
+
+ # [[languages.es.menus.header]]
+ # name = &amp;#34;Experiencia&amp;#34;
+ # URL = &amp;#34;/es/#experience&amp;#34;
+ # weight = 4
+
+ [[languages.es.menus.header]]
+ name = &amp;#34;Blog&amp;#34;
+ URL = &amp;#34;/es/blog&amp;#34;
+ weight = 5
+
+ [[languages.es.menus.header]]
+ name = &amp;#34;Contacto&amp;#34;
+ URL = &amp;#34;/es/#contact&amp;#34;
+ weight = 6
+
+ [[languages.es.menus.footer]]
+ name = &amp;#34;Sobre mi&amp;#34;
+ URL = &amp;#34;/es/#about&amp;#34;
+ weight = 2
+
+ [[languages.es.menus.footer]]
+ name = &amp;#34;Portfolio&amp;#34;
+ URL = &amp;#34;/es/#portfolio&amp;#34;
+ weight = 3
+
+ [[languages.es.menus.footer]]
+ name = &amp;#34;Contact&amp;#34;
+ URL = &amp;#34;/es/#contact&amp;#34;
+ weight = 4
+
+ [languages.fr]
+ disabled = false
+ languageCode = &amp;#39;fr&amp;#39;
+ languageDirection = &amp;#39;ltr&amp;#39;
+ languageName = &amp;#39;Français&amp;#39;
+ title = &amp;#39;&amp;#39;
+ weight = 0
+
+ [languages.fr.menus]
+ [[languages.fr.menus.header]]
+ name = &amp;#39;About&amp;#39;
+ URL = &amp;#39;#about&amp;#39;
+ weight = 2
+ [[languages.fr.menus.header]]
+ name = &amp;#39;Portfolio&amp;#39;
+ URL = &amp;#39;#portfolio&amp;#39;
+ weight = 3
+ # [[languages.fr.menus.header]]
+ # name = &amp;#34;Experience&amp;#34;
+ # URL = &amp;#34;#experience&amp;#34;
+ # weight = 4
+
+ [[languages.fr.menus.header]]
+ name = &amp;#34;Blog&amp;#34;
+ URL = &amp;#34;/blog&amp;#34;
+ weight = 5
+
+ [[languages.fr.menus.header]]
+ name = &amp;#34;Contact&amp;#34;
+ URL = &amp;#34;#contact&amp;#34;
+ weight = 6
+
+ [[languages.fr.menus.footer]]
+ name = &amp;#34;About&amp;#34;
+ URL = &amp;#34;#about&amp;#34;
+ weight = 2
+
+ [[languages.fr.menus.footer]]
+ name = &amp;#34;Portfolio&amp;#34;
+ URL = &amp;#34;#portfolio&amp;#34;
+ weight = 3
+
+ [[languages.fr.menus.footer]]
+ name = &amp;#34;Contact&amp;#34;
+ URL = &amp;#34;#contact&amp;#34;
+ weight = 4
+
+# Plugins
+[params.plugins]
+
+ # CSS Plugins
+ [[params.plugins.css]]
+ URL = &amp;#34;css/custom.css&amp;#34;
+ [[params.plugins.css]]
+ URL = &amp;#34;css/adritian-icons.css&amp;#34;
+ ## Optional, if you want print improvements (to PDF/printed)
+ [[params.plugins.css]]
+ URL = &amp;#34;css/bootstrap-print.css&amp;#34;
+ 
+ # JS Plugins
+ [[params.plugins.js]]
+ URL = &amp;#34;js/rad-animations.js&amp;#34;
+ [[params.plugins.js]]
+ URL = &amp;#34;js/sticky-header.js&amp;#34;
+ [[params.plugins.js]]
+ URL = &amp;#34;js/library/fontfaceobserver.js&amp;#34;
+
+ # SCSS Plugins
+ [[params.plugins.scss]]
+ URL = &amp;#34;scss/adritian.scss&amp;#34;
+
+
+# theme/color style 
+[params.colorTheme]
+
+## the following configuration would disable automatic theme selection
+# [params.colorTheme.auto]
+# disable = true
+# [params.colorTheme.forced]
+# theme = &amp;#34;dark&amp;#34;
+
+## the following parameter will disable theme override in the footer
+# [params.colorTheme.selector.disable]
+# footer = true
+
+
+## by default we allow override AND automatic selection
+
+[params.blog]
+layout = &amp;#34;default&amp;#34; # options: default, sidebar
+sidebarWidth = &amp;#34;25&amp;#34; # percentage width of the sidebar
+showCategories = true
+showRecentPosts = true
+recentPostCount = 5
+listStyle = &amp;#34;summary&amp;#34; # options: simple, summary
+&lt;/code>&lt;/pre>&lt;ol>
+&lt;li>Get the module: &lt;code>hugo mod get -u&lt;/code>&lt;/li>
+&lt;li>Execute &lt;code>hugo mod npm pack&lt;/code> - this will generate a &lt;code>package.json&lt;/code> file in the root folder of your site, with the dependencies for the theme.&lt;/li>
+&lt;li>Execute &lt;code>npm install&lt;/code> - this will install the dependencies for the theme (including bootstrap)&lt;/li>
+&lt;li>(Optional, to override the defaults) Create a file &lt;code>data/homepage.yml&lt;/code> with the contents of the &lt;a href="https://github.com/zetxek/adritian-free-hugo-theme/blob/main/exampleSite/data/homepage.yml">&lt;code>exampleSite/data/homepage.yml&lt;/code>&lt;/a> file, and customize to your needs (&lt;strong>note: this file is not included in your theme if you use hugo modules, download it manually from the repository&lt;/strong>)&lt;/li>
+&lt;/ol>
+&lt;/details>
+&lt;h3 id="traditional-installation-as-git-submodule">Traditional Installation (as git submodule)&lt;/h3>
+&lt;p>If you prefer not to use Hugo Modules, you can still install the theme as a git submodule.
+The guide is very similar to &lt;a href="https://gohugo.io/getting-started/quick-start/#create-a-site">official &amp;ldquo;Quick Start&amp;rdquo;&lt;/a>, just changing the theme URL in the &lt;code>git submodule add&lt;/code> command:&lt;/p></description></item><item><title>4th Job</title><link>http://localhost:1313/experience/job-4/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0100</pubDate><guid>http://localhost:1313/experience/job-4/</guid><description>&lt;h2 id="my-work-as-a-freelance">My work as a freelance&lt;/h2>
+&lt;p>As a freelancer, I worked on two major projects.&lt;/p>
+&lt;p>Project #1: an innovative real-time reverb-canceling embedded system for speaker correction using deep learning and reinforcement learning. In this project I did the full system design on STM32H7, from concept to prototype. It included a Qualcomm QCC chip for top-quality Bluetooth audio. Most development focused on building fast DSP algorithms for the ARM microcontroller and pushing performance to the limit for large convolutions. At the same time, I programmed a CNN in Python with TensorFlow for other tasks.&lt;/p></description></item><item><title>3rd Job</title><link>http://localhost:1313/experience/job-3/</link><pubDate>Sun, 01 Dec 2024 00:00:00 +0100</pubDate><guid>http://localhost:1313/experience/job-3/</guid><description>&lt;h2 id="firmware-engineer">Firmware Engineer&lt;/h2>
+&lt;p>As a Firmware Engineer, I worked with STM32 and ESP32 to develop and maintain firmware for consumer electronics. Part of my job was to develop a system for mass-programming custom PCBs.&lt;/p>
+&lt;p>All the projects I worked on focused on cost optimization, so the microcontrollers had very limited resources. For that reason, I used low-level APIs and bare-metal programming for STM32, and FreeRTOS for ESP32.&lt;/p></description></item><item><title>Graziella Nutella</title><link>http://localhost:1313/testimonial/graziella-nutella/</link><pubDate>Mon, 25 Nov 2024 21:53:18 +0100</pubDate><guid>http://localhost:1313/testimonial/graziella-nutella/</guid><description>&lt;p>The content of this section comes from the &lt;code>content/testimonial&lt;/code> folder contents. This that you see is in &lt;code>content/testimonial/graziella-nutella.md&lt;/code>.&lt;/p>
+&lt;p>You can also use parameters for configuration:&lt;/p>
+&lt;pre tabindex="0">&lt;code>name: &amp;#34;Nutting Hill&amp;#34; # place/city/country for the experience. Fill-in.
+position: &amp;#34;Nutcracker&amp;#34; # from-to, for example &amp;#34;2022-2024&amp;#34;. Fill-in.
+
+params:
+ image:
+ src: &amp;#34;images/testimonials/testimonial1.png&amp;#34; # example: &amp;#34;images/clients/asgardia.png&amp;#34;
+ scale: 0.5
+&lt;/code>&lt;/pre></description></item><item><title>Dana Oneal</title><link>http://localhost:1313/testimonial/dana-oneal/</link><pubDate>Mon, 25 Nov 2024 21:50:45 +0100</pubDate><guid>http://localhost:1313/testimonial/dana-oneal/</guid><description>&lt;p>I had the pleasure of working with this freelancer on several projects, and their performance has been nothing short of outstanding. They bring a high level of expertise, creativity, and dedication to every task. Their ability to understand project requirements and deliver exceptional results on time is truly impressive. They are a reliable and proactive professional who consistently exceeds expectations. I highly recommend this freelancer to anyone seeking top-notch skills and a collaborative partner.&lt;/p></description></item><item><title>Ferdinand Shermand</title><link>http://localhost:1313/testimonial/ferdinand-shermand/</link><pubDate>Mon, 25 Nov 2024 21:30:46 +0100</pubDate><guid>http://localhost:1313/testimonial/ferdinand-shermand/</guid><description>&lt;p>Working with this colleague has been an absolute pleasure. Their dedication, professionalism, and positive attitude make them an invaluable asset to our team. They consistently go above and beyond to ensure that projects are completed on time and to the highest standard. Their ability to collaborate effectively and support their colleagues is truly commendable. I am continually impressed by their innovative thinking and problem-solving skills. This colleague is not just a team member but a true inspiration and a driving force behind our team’s success.&lt;/p></description></item><item><title>Versa</title><link>http://localhost:1313/client-work/versa/</link><pubDate>Wed, 25 Sep 2024 09:53:42 +0200</pubDate><guid>http://localhost:1313/client-work/versa/</guid><description/></item><item><title>Intellisense</title><link>http://localhost:1313/client-work/intellisense/</link><pubDate>Sun, 25 Aug 2024 10:23:39 +0200</pubDate><guid>http://localhost:1313/client-work/intellisense/</guid><description/></item><item><title>Zigor</title><link>http://localhost:1313/client-work/zigor/</link><pubDate>Sun, 25 Aug 2024 10:23:08 +0200</pubDate><guid>http://localhost:1313/client-work/zigor/</guid><description/></item><item><title>UPV</title><link>http://localhost:1313/client-work/upv/</link><pubDate>Sun, 25 Aug 2024 10:21:48 +0200</pubDate><guid>http://localhost:1313/client-work/upv/</guid><description/></item><item><title>Earth 2.0</title><link>http://localhost:1313/client-work/earth2.0/</link><pubDate>Sun, 25 Aug 2024 10:17:12 +0200</pubDate><guid>http://localhost:1313/client-work/earth2.0/</guid><description/></item><item><title>Universidad de Murcia</title><link>http://localhost:1313/education/high-school/</link><pubDate>Sun, 25 Aug 2024 09:53:42 +0200</pubDate><guid>http://localhost:1313/education/high-school/</guid><description/></item><item><title>Universitat Politècnica de València</title><link>http://localhost:1313/education/university-of-life/</link><pubDate>Sun, 25 Aug 2024 09:53:42 +0200</pubDate><guid>http://localhost:1313/education/university-of-life/</guid><description/></item><item><title>Vibratio</title><link>http://localhost:1313/projects/vibratio/</link><pubDate>Sun, 25 Aug 2024 09:53:42 +0200</pubDate><guid>http://localhost:1313/projects/vibratio/</guid><description>&lt;p>Vibratio is a startup project that consists on making a real-time reverb cancelling system for speakers. My work started with the atchitecture conception, and ended with an embedded system that can play aptX audio and run configurable DSP pipelines in real time by using a phone app. For this task an STM32H7 and Qualcomm QCC5125 were used. The DSP capabilities in ARM processors were key to achieve an efficient convolution algotihm.&lt;/p></description></item><item><title>Sample content: featured image</title><link>http://localhost:1313/blog/sample-3/</link><pubDate>Mon, 24 Jun 2024 14:38:33 +0200</pubDate><guid>http://localhost:1313/blog/sample-3/</guid><description>&lt;p>Sample blog content. Like a lorem ipsum but saying something more interesting.&lt;/p>
+&lt;p>&lt;img src="http://localhost:1313/img/blog/feature-sample-3.png" alt="Example image">&lt;/p>
+&lt;p>Welcome to the world of &amp;ldquo;Content Ipsum,&amp;rdquo; the fresh alternative to the classic lorem ipsum. It&amp;rsquo;s the perfect blend for designers and writers who crave a dash of creativity and meaning in their placeholder text. Imagine a text that not only fills the space but also sparks the imagination, a text that weaves tales of innovation, inspiration, and the endless possibilities that creativity brings.&lt;/p></description></item><item><title>Sample content: formatting styles</title><link>http://localhost:1313/blog/sample/</link><pubDate>Fri, 21 Jun 2024 14:38:33 +0200</pubDate><guid>http://localhost:1313/blog/sample/</guid><description>&lt;p>Sample blog content. Like a lorem ipsum but saying something more interesting.&lt;/p>
+&lt;p>We will show some content that is supported:&lt;/p>
+&lt;h2 id="basic-syntax">Basic Syntax&lt;/h2>
+&lt;h3 id="headings">Headings&lt;/h3>
+&lt;pre tabindex="0">&lt;code># Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+&lt;/code>&lt;/pre>&lt;h2 id="heading-2">Heading 2&lt;/h2>
+&lt;h3 id="heading-3">Heading 3&lt;/h3>
+&lt;h4 id="heading-4">Heading 4&lt;/h4>
+&lt;h5 id="heading-5">Heading 5&lt;/h5>
+&lt;h6 id="heading-6">Heading 6&lt;/h6>
+&lt;h3 id="emphasis">Emphasis&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>*This text will be italic*
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>_This will also be italic_
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>**This text will be bold**
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>__This will also be bold__
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>_You **can** combine them_
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;em>This text will be italic&lt;/em>&lt;/p></description></item><item><title>2nd Job</title><link>http://localhost:1313/experience/job-2/</link><pubDate>Fri, 01 Dec 2023 00:00:00 +0100</pubDate><guid>http://localhost:1313/experience/job-2/</guid><description>&lt;h2 id="signal-processing-and-rd-engineer">Signal Processing and R&amp;amp;D Engineer&lt;/h2>
+&lt;p>During my time at Zigor I had an important role as the main signal processing engineer and PCB designer in the development of various power converters and power electronic devices.&lt;/p>
+&lt;p>I was in charge of the hardware development of a power supply with over 10 kV insulation barriers, where I designed essential parts like analog and EMI filters, and implemented digital filters in the microcontroller. I also led the whole PCB design validation and testing using Altium.&lt;/p></description></item><item><title>1st Job</title><link>http://localhost:1313/experience/job-1/</link><pubDate>Thu, 01 Dec 2022 00:00:00 +0100</pubDate><guid>http://localhost:1313/experience/job-1/</guid><description>&lt;h2 id="rd-scholarship-embedded-software">R&amp;amp;D Scholarship, Embedded Software&lt;/h2>
+&lt;p>As a Junior Intern at the Universitat Politècnica de València, I had the chance to work on different projects that helped me build my technical and professional skills. Working with experienced engineers and PhDs, I contributed to the development of research devices.&lt;/p>
+&lt;p>During the internship, I was asked to write firmware in C for communicating several Texas Instruments microcontrollers over a single serial line. I also did extensive research on minimizing transistor losses in power converters and worked on industrial Windows software development.&lt;/p></description></item><item><title>Footer</title><link>http://localhost:1313/footer/footer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/footer/footer/</guid><description>&lt;section id="contact" class="section section--contact pt-0">
+ &lt;div class="container">
+ &lt;div class="contact w-100">
+ &lt;h2>Reach out&lt;/h2>
+
+ &lt;div class="row pt-2">
+ &lt;div class="col-12 col-lg-7">
+ &lt;form action="https://formspree.io/f/mblkwgwq" method="POST" class="contact__form">
+ &lt;div class="row">
+ &lt;div class="col-12 col-sm-6">
+ &lt;input type="text" name="full_name" class="form-control" placeholder="Your name">
+ &lt;/div>
+ &lt;div class="col-12 col-sm-6">
+ &lt;input type="email" name="email" class="form-control" placeholder="Your e-mail">
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row pt-4">
+ &lt;div class="col-12">
+ &lt;input type="tel" name="phone" class="form-control" placeholder="Your phone">
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row pt-4">
+ &lt;div class="col-12">
+ &lt;textarea name="message" class="form-control" rows="3" placeholder="Your text">&lt;/textarea>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row pt-4">
+ &lt;div class="col-12">
+ &lt;button type="submit" class="btn btn-primary">Send message&lt;/button>
+ &lt;/div>
+ &lt;/div>
+ &lt;/form>
+ &lt;/div>
+ &lt;div class="col-12 col-lg-5 contact__info">
+ 
+ &lt;h3>My phone&lt;/h3>
+ &lt;span>&lt;a href='tel:+34608559204'>+34 608 559 204&lt;/a>&lt;/span>
+ 
+
+ 
+ &lt;h3>My mail&lt;/h3>
+ &lt;span>&lt;a href='mailto:javi8799@gmail.com'>javi8799@gmail.com&lt;/a>&lt;/span>
+ 
+ 
+ 
+ &lt;h3>My location&lt;/h3>
+ &lt;span>🇪🇸 Spain&lt;/span>
+ 
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+&lt;!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+ 
+
+
+&lt;section class="section section--border-bottom rad-animation-group section--padding">
+ &lt;div class="container d-flex justify-content-center align-items-center">
+ &lt;div class="row rad-fade-down">
+ &lt;div class="col-12 text-center">
+ 
+ &lt;h2 class="section__title">Extra footer content&lt;/h2>
+ 
+ 
+ &lt;div class="text-section__content">
+ &lt;p>Additional content added after the &lt;code>section&lt;/code> blocks.&lt;/p>
+&lt;p>Here you could freestyle, add other shortcodes, &amp;hellip; Or just let the content empty, and rely on the shortcode sections alone.&lt;/p></description></item><item><title>Home</title><link>http://localhost:1313/home/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/home/home/</guid><description>&lt;section id="showcase" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+ &lt;div id="main-content">
+ 
+
+
+ 
+
+ &lt;div class="showcase-section row flex-column-reverse flex-md-row rad-fade-down rad-waiting rad-animate">
+ &lt;div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+ &lt;h1 class="display-1">
+ Hi, my name is Javier Serrano
+ &lt;/h1>
+ &lt;h2 class="display-5">
+ &lt;span>I'm an Embedded Software Developer specialized in DSP, AI and Power Electronics&lt;/span>
+ &lt;/h2>
+ &lt;div class="lead">
+ 
+ &lt;/div>
+ 
+ &lt;a
+ href="mailto:Javi8799@gmail.com"
+ class="btn btn-primary"
+ >
+ &lt;i class="icon-email">&lt;/i>
+ Need a Freelance?
+ &lt;/a>
+ 
+ &lt;/div>
+ &lt;div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 profile-image">
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+ 
+
+
+ &lt;picture class="">
+ 
+ 
+
+ &lt;source srcset="http://localhost:1313/images/about/user-picture_hu_2e7cca1d29a050af.webp 1x, http://localhost:1313/images/about/user-picture_hu_4273b3b672c31d1b.webp 2x" type="image/webp" />
+ &lt;source srcset="http://localhost:1313/images/about/user-picture_hu_68fc51693ea3426e.png 1x, http://localhost:1313/images/about/user-picture_hu_a5e373a97295ca15.png 2x" type="image/png">
+
+ &lt;img
+ width="945"
+ height="945"
+ class="lozad img-responsive "
+ data-src="http://localhost:1313/images/about/user-picture_hu_68fc51693ea3426e.png"
+ alt=''
+ src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+ loading="lazy"
+ decoding="async"
+ />
+ &lt;/picture>
+
+
+
+
+ &lt;/div>
+ &lt;div class="col-12 inner-content">
+ 
+
+
+
+
+
+&lt;div class="container">
+ &lt;div class="row platform-links shortcode">
+ &lt;div class="col-12">
+ 
+ 
+ &lt;a
+ href="https://linkedin.com/in/javier-garciaserrano"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="linkedin"
+ >&lt;i class="icon-linkedin">&lt;/i>
+ &lt;/a>
+
+ 
+ 
+ &lt;a
+ href="https://github.com/javiScriptGarcia"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="square-github"
+ >&lt;i class="icon-square-github">&lt;/i>
+ &lt;/a>
+
+ 
+ 
+ &lt;a
+ href="mailto:Javi8799@gmail.com"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="envelope"
+ >&lt;i class="icon-envelope">&lt;/i>
+ &lt;/a>
+
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+
+
+
+ &lt;/div>
+ 
+
+ &lt;/div>
+
+
+ &lt;div class="row platform-links">
+ &lt;div class="col-12">&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ 
+&lt;/section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;section id="about" class="section rad-animation-group pb-0">
+ &lt;div class="rad-fade-down">
+ &lt;div class="row d-flex flex-column-reverse flex-md-row">
+ &lt;div class="about__profile-picture col-12 col-md-6">
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+ 
+
+
+ &lt;picture class="">
+ 
+ 
+
+ &lt;source srcset="http://localhost:1313/images/about/working-picture_hu_62f150ba2dab173f.webp 1x, http://localhost:1313/images/about/working-picture_hu_fe067534d735aabc.webp 2x" type="image/webp" />
+ &lt;source srcset="http://localhost:1313/images/about/working-picture_hu_34dbefc4f61fa47a.png 1x, http://localhost:1313/images/about/working-picture_hu_9302a71f91ecbcea.png 2x" type="image/png">
+
+ &lt;img
+ width="958"
+ height="958"
+ class="lozad img-responsive image-left-overflow"
+ data-src="http://localhost:1313/images/about/working-picture_hu_34dbefc4f61fa47a.png"
+ alt=''
+ src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+ loading="lazy"
+ decoding="async"
+ />
+ &lt;/picture>
+
+ &lt;/div>
+ &lt;div class="col-12 col-md-6 my-auto">
+ &lt;h1>What I do&lt;/h1>
+ &lt;div class="about-me content lead">
+ I work as a freelance for companies and teams of all sizes. I can dive into any project and technology, and play different roles in a team. My years enrolled in different tasks and companies turned me into a highly technical and creative problem-solver. &lt;br/>&lt;br/>I am passionate on what I do, and always stay commited with my given purpose. I will always look further ahead to ease the work of my colleagues and leaders, and make communication a priority for success.&lt;br/>&lt;br/>My experience was earned working on many different projects, as well as studying powerful technologies, both during my academic and working years. I am a naturally-curious person, and I am always excited to learn more.&lt;br/>&lt;br/>I am happy to share with you a deeper insight of my background. You can find it in this blog and &lt;a href="http://localhost:1313/files/CV_DSP.pdf" target="_blank" download>downloading my CV!&lt;/a>&lt;br/>
+ &lt;/div>
+ 
+ &lt;a href="http://localhost:1313/skills" target="_blank" class="btn btn-primary">
+ &lt;i class="icon-user">&lt;/i>
+ Check my skills
+ &lt;/a>
+ 
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+
+
+
+&lt;section
+ id="education"
+ class="section section--border-bottom rad-animation-group"
+>
+ &lt;div class="container-education">
+ &lt;div class="row rad-fade-down">
+ &lt;div class="col-12">
+ &lt;h2>Education&lt;/h2>
+ &lt;div class="row pt-2 pt-md-4">
+ 
+ &lt;div class="col-12 col-sm-6 mb-4 mb-sm-0">
+ &lt;div class="education">
+ &lt;div class="education__date">2024 – 2025&lt;/div>
+ &lt;div class="education__title">Universidad de Murcia&lt;/div>
+ &lt;div class="education__degree">Master of Engineering, Artificial Intelligence&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="col-12 col-sm-6 mb-4 mb-sm-0">
+ &lt;div class="education">
+ &lt;div class="education__date">2017 - 2022&lt;/div>
+ &lt;div class="education__title">Universitat Politècnica de València&lt;/div>
+ &lt;div class="education__degree">Bachelor of Engineering, Industrial Electronics and Automation Engineering&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ 
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+&lt;section id="experience-single" class="section-experience section section--border-bottom rad-animation-group flex-grow-1">
+ &lt;div class="row flex-column-reverse flex-md-row rad-fade-down">
+ &lt;div class="experience-list col-12 col-md-6">
+ &lt;h2>
+ 
+ Work Experience
+ 
+ &lt;/h2>
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ &lt;div class="experience">
+ &lt;a href="http://localhost:1313/experience/job-4/" class="experience__link">
+ &lt;div class="experience__header">
+ 
+ 
+ 
+ &lt;img 
+ src="http://localhost:1313/images/experience/DSPecialist_Logo_hu_4a201a841da4c602.webp" 
+ alt=" logo"
+ class="experience__company-logo"
+ loading="lazy"
+ />
+ 
+ &lt;div class="experience__meta">
+ &lt;div class="experience__date">2024-now&lt;/div>
+ &lt;div class="experience__title">Embedded DSP Engineer&lt;/div>
+ &lt;div class="experience__company">
+ Freelance.
+ &lt;span class="experience__location">Murcia, Spain&lt;/span>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="experience__description d-none d-print-block">
+ &lt;h1>4th Job&lt;/h1>
+ My work as a freelance As a freelancer, I worked on two major projects.
+Project #1: an innovative real-time reverb-canceling embedded system for speaker correction using deep learning and reinforcement learning. In this project I did the full system design on STM32H7, from concept to prototype. It included a Qualcomm QCC chip for top-quality Bluetooth audio. Most development focused on building fast DSP algorithms for the ARM microcontroller and pushing performance to the limit for large convolutions. At the same time, I programmed a CNN in Python with TensorFlow for other tasks.
+Project #2: Development of a wireless sensing system using AI and RF. This project is confidential under NDA protection.
+
+ &lt;/div>
+ &lt;/div>
+ &lt;/a>
+ &lt;/div>
+ 
+ &lt;div class="experience">
+ &lt;a href="http://localhost:1313/experience/job-3/" class="experience__link">
+ &lt;div class="experience__header">
+ 
+ 
+ 
+ &lt;img 
+ src="http://localhost:1313/images/experience/Versa_Logo_hu_fe7622a97c71dcb.webp" 
+ alt=" logo"
+ class="experience__company-logo"
+ loading="lazy"
+ />
+ 
+ &lt;div class="experience__meta">
+ &lt;div class="experience__date">2023-2024&lt;/div>
+ &lt;div class="experience__title">Firmware Engineer&lt;/div>
+ &lt;div class="experience__company">
+ Versa Design.
+ &lt;span class="experience__location">Valencia, Spain&lt;/span>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="experience__description d-none d-print-block">
+ &lt;h1>3rd Job&lt;/h1>
+ Firmware Engineer As a Firmware Engineer, I worked with STM32 and ESP32 to develop and maintain firmware for consumer electronics. Part of my job was to develop a system for mass-programming custom PCBs.
+All the projects I worked on focused on cost optimization, so the microcontrollers had very limited resources. For that reason, I used low-level APIs and bare-metal programming for STM32, and FreeRTOS for ESP32.
+
+ &lt;/div>
+ &lt;/div>
+ &lt;/a>
+ &lt;/div>
+ 
+ &lt;div class="experience">
+ &lt;a href="http://localhost:1313/experience/job-2/" class="experience__link">
+ &lt;div class="experience__header">
+ 
+ 
+ 
+ &lt;img 
+ src="http://localhost:1313/images/experience/Zigor_Logo_hu_e69adb3e1d7bc63.webp" 
+ alt=" logo"
+ class="experience__company-logo"
+ loading="lazy"
+ />
+ 
+ &lt;div class="experience__meta">
+ &lt;div class="experience__date">2022-2023&lt;/div>
+ &lt;div class="experience__title">Signal Processing and R&amp;amp;D Engineer&lt;/div>
+ &lt;div class="experience__company">
+ Zigor Research &amp;amp; Development.
+ &lt;span class="experience__location">Valencia, Spain&lt;/span>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="experience__description d-none d-print-block">
+ &lt;h1>2nd Job&lt;/h1>
+ Signal Processing and R&amp;amp;D Engineer During my time at Zigor I had an important role as the main signal processing engineer and PCB designer in the development of various power converters and power electronic devices.
+I was in charge of the hardware development of a power supply with over 10 kV insulation barriers, where I designed essential parts like analog and EMI filters, and implemented digital filters in the microcontroller. I also led the whole PCB design validation and testing using Altium.
+I also took part in other power converter projects, where I designed PCBs for high-speed signals, did hardware simulations, designed analog and combinational circuits, and did experimental research.
+
+ &lt;/div>
+ &lt;/div>
+ &lt;/a>
+ &lt;/div>
+ 
+ &lt;div class="experience">
+ &lt;a href="http://localhost:1313/experience/job-1/" class="experience__link">
+ &lt;div class="experience__header">
+ 
+ 
+ 
+ &lt;img 
+ src="http://localhost:1313/images/experience/UPV_Logo_hu_559d6b8e7618de8a.webp" 
+ alt=" logo"
+ class="experience__company-logo"
+ loading="lazy"
+ />
+ 
+ &lt;div class="experience__meta">
+ &lt;div class="experience__date">2022-2022&lt;/div>
+ &lt;div class="experience__title">Junior intern, Embedded Software / IDM - UPV&lt;/div>
+ &lt;div class="experience__company">
+ Universitat Politècnica de València.
+ &lt;span class="experience__location">Valencia, Spain&lt;/span>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="experience__description d-none d-print-block">
+ &lt;h1>1st Job&lt;/h1>
+ R&amp;amp;D Scholarship, Embedded Software As a Junior Intern at the Universitat Politècnica de València, I had the chance to work on different projects that helped me build my technical and professional skills. Working with experienced engineers and PhDs, I contributed to the development of research devices.
+During the internship, I was asked to write firmware in C for communicating several Texas Instruments microcontrollers over a single serial line. I also did extensive research on minimizing transistor losses in power converters and worked on industrial Windows software development.
+I was also involved in firmware tasks for ESP32 and TI devices, mostly communicating devices using I2C, MODBUS TCP/IP, RS485, and UART.
+
+ &lt;/div>
+ &lt;/div>
+ &lt;/a>
+ &lt;/div>
+ 
+
+ 
+ &lt;/div>
+ &lt;div class="experience-description col-12 col-md-6">
+ 
+ 
+
+
+
+
+
+
+
+
+
+&lt;div class="container-experience">
+ &lt;div class="row">
+ &lt;h2>Professional Experience&lt;/h2>
+ &lt;div class="lead">&lt;/div>
+ &lt;/div>
+
+ &lt;div class="row">
+ 
+ &lt;div class="col-12 col-lg-4">
+ &lt;a
+ href='https://www.linkedin.com/in/adrianmoreno/'
+ class="btn btn-primary btn-block w-100"
+ target="_blank"
+ rel="noopener noreferrer"
+ >
+ 
+ LinkedIn
+ &lt;i class="icon-arrow-right">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ 
+
+ 
+
+ 
+ &lt;/div>
+&lt;/div>
+
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+
+
+
+
+
+
+
+
+&lt;section id="experience-list-shortcode" class="section-experience section section--border-bottom rad-animation-group flex-grow-1 ">
+ &lt;div class="row flex-column-reverse flex-md-row rad-fade-down">
+ &lt;div class="experience-list col-12 mt-5 mt-sm-0">
+ 
+ &lt;h2 class="section__title mb-4">Experience (as list)&lt;/h2>
+ 
+ 
+ 
+
+ 
+
+ 
+ &lt;div class="experience row">
+ &lt;div class="experience__header col-12 col-md-3 d-flex align-items-start">
+ 
+ 
+ 
+ &lt;img src="http://localhost:1313/images/experience/DSPecialist_Logo_hu_4a201a841da4c602.webp" alt=" logo"
+ class="experience__company-logo" loading="lazy">
+ 
+ &lt;div class="experience__meta">
+ &lt;div class="experience__date">2024-now&lt;/div>
+ &lt;div class="experience__title">Embedded DSP Engineer&lt;/div>
+ &lt;div class="experience__company">Freelance. &lt;span class="experience__location">
+ Murcia, Spain&lt;/span>&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="experience__description d-print-block col-12 col-md-9 mt-3 mt-md-0">
+ &lt;h1>4th Job&lt;/h1>
+ &lt;h2 id="my-work-as-a-freelance">My work as a freelance&lt;/h2>
+&lt;p>As a freelancer, I worked on two major projects.&lt;/p></description></item><item><title>Printable CV</title><link>http://localhost:1313/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/cv/</guid><description>&lt;p>ℹ This page is a demo of the printer-friendly output of the theme. You can find the source code in the demo repo (&lt;a href="https://raw.githubusercontent.com/zetxek/adritian-demo/refs/heads/main/content/cv.md%29">https://raw.githubusercontent.com/zetxek/adritian-demo/refs/heads/main/content/cv.md)&lt;/a>. Try printing it directly from your browser!&lt;/p>
+&lt;h3 id="about-me">About me&lt;/h3>
+&lt;p>I am a passionate software engineer with over 10 years of experience building web applications and distributed systems. My expertise spans full-stack development, cloud architecture, and leading engineering teams to deliver impactful solutions. I thrive on solving complex technical challenges while mentoring others and fostering a collaborative engineering culture.&lt;/p></description></item><item><title>Search</title><link>http://localhost:1313/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/search/</guid><description>search</description></item></channel></rss>
