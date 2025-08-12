@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Homes on</title><link>http://localhost:1313/home/</link><description>Recent content in Homes on</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/home/index.xml" rel="self" type="application/rss+xml"/><item><title>Home</title><link>http://localhost:1313/home/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/home/home/</guid><description>&lt;section id="showcase" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Homes on</title><link>https://adritian-demo.vercel.app/home/</link><description>Recent content in Homes on</description><generator>Hugo</generator><language>en</language><atom:link href="https://adritian-demo.vercel.app/home/index.xml" rel="self" type="application/rss+xml"/><item><title>Home</title><link>https://adritian-demo.vercel.app/home/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://adritian-demo.vercel.app/home/home/</guid><description>&lt;section id="showcase" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
  &lt;div id="main-content">
  
 
@@ -51,14 +51,14 @@
  
  
 
- &lt;source srcset="http://localhost:1313/images/about/user-picture_hu_2e7cca1d29a050af.webp 1x, http://localhost:1313/images/about/user-picture_hu_4273b3b672c31d1b.webp 2x" type="image/webp" />
- &lt;source srcset="http://localhost:1313/images/about/user-picture_hu_68fc51693ea3426e.png 1x, http://localhost:1313/images/about/user-picture_hu_a5e373a97295ca15.png 2x" type="image/png">
+ &lt;source srcset="https://adritian-demo.vercel.app/images/about/user-picture_hu_2e7cca1d29a050af.webp 1x, https://adritian-demo.vercel.app/images/about/user-picture_hu_4273b3b672c31d1b.webp 2x" type="image/webp" />
+ &lt;source srcset="https://adritian-demo.vercel.app/images/about/user-picture_hu_68fc51693ea3426e.png 1x, https://adritian-demo.vercel.app/images/about/user-picture_hu_a5e373a97295ca15.png 2x" type="image/png">
 
  &lt;img
  width="945"
  height="945"
  class="lozad img-responsive "
- data-src="http://localhost:1313/images/about/user-picture_hu_68fc51693ea3426e.png"
+ data-src="https://adritian-demo.vercel.app/images/about/user-picture_hu_68fc51693ea3426e.png"
  alt=''
  src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
  loading="lazy"
@@ -170,14 +170,14 @@
  
  
 
- &lt;source srcset="http://localhost:1313/images/about/working-picture_hu_62f150ba2dab173f.webp 1x, http://localhost:1313/images/about/working-picture_hu_fe067534d735aabc.webp 2x" type="image/webp" />
- &lt;source srcset="http://localhost:1313/images/about/working-picture_hu_34dbefc4f61fa47a.png 1x, http://localhost:1313/images/about/working-picture_hu_9302a71f91ecbcea.png 2x" type="image/png">
+ &lt;source srcset="https://adritian-demo.vercel.app/images/about/working-picture_hu_62f150ba2dab173f.webp 1x, https://adritian-demo.vercel.app/images/about/working-picture_hu_fe067534d735aabc.webp 2x" type="image/webp" />
+ &lt;source srcset="https://adritian-demo.vercel.app/images/about/working-picture_hu_34dbefc4f61fa47a.png 1x, https://adritian-demo.vercel.app/images/about/working-picture_hu_9302a71f91ecbcea.png 2x" type="image/png">
 
  &lt;img
  width="958"
  height="958"
  class="lozad img-responsive image-left-overflow"
- data-src="http://localhost:1313/images/about/working-picture_hu_34dbefc4f61fa47a.png"
+ data-src="https://adritian-demo.vercel.app/images/about/working-picture_hu_34dbefc4f61fa47a.png"
  alt=''
  src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
  loading="lazy"
@@ -189,10 +189,10 @@
  &lt;div class="col-12 col-md-6 my-auto">
  &lt;h1>What I do&lt;/h1>
  &lt;div class="about-me content lead">
- I work as a freelance for companies and teams of all sizes. I can dive into any project and technology, and play different roles in a team. My years enrolled in different tasks and companies turned me into a highly technical and creative problem-solver. &lt;br/>&lt;br/>I am passionate on what I do, and always stay commited with my given purpose. I will always look further ahead to ease the work of my colleagues and leaders, and make communication a priority for success.&lt;br/>&lt;br/>My experience was earned working on many different projects, as well as studying powerful technologies, both during my academic and working years. I am a naturally-curious person, and I am always excited to learn more.&lt;br/>&lt;br/>I am happy to share with you a deeper insight of my background. You can find it in this blog and &lt;a href="http://localhost:1313/files/CV_DSP.pdf" target="_blank" download>downloading my CV!&lt;/a>&lt;br/>
+ I work as a freelance for companies and teams of all sizes. I can dive into any project and technology, and play different roles in a team. My years enrolled in different tasks and companies turned me into a highly technical and creative problem-solver. &lt;br/>&lt;br/>I am passionate on what I do, and always stay commited with my given purpose. I will always look further ahead to ease the work of my colleagues and leaders, and make communication a priority for success.&lt;br/>&lt;br/>My experience was earned working on many different projects, as well as studying powerful technologies, both during my academic and working years. I am a naturally-curious person, and I am always excited to learn more.&lt;br/>&lt;br/>I am happy to share with you a deeper insight of my background. You can find it in this blog and &lt;a href="https://adritian-demo.vercel.app/files/CV_DSP.pdf" target="_blank" download>downloading my CV!&lt;/a>&lt;br/>
  &lt;/div>
  
- &lt;a href="http://localhost:1313/skills" target="_blank" class="btn btn-primary">
+ &lt;a href="https://adritian-demo.vercel.app/skills" target="_blank" class="btn btn-primary">
  &lt;i class="icon-user">&lt;/i>
  Check my skills
  &lt;/a>
@@ -271,13 +271,13 @@
 
  
  &lt;div class="experience">
- &lt;a href="http://localhost:1313/experience/job-4/" class="experience__link">
+ &lt;a href="https://adritian-demo.vercel.app/experience/job-4/" class="experience__link">
  &lt;div class="experience__header">
  
  
  
  &lt;img 
- src="http://localhost:1313/images/experience/DSPecialist_Logo_hu_4a201a841da4c602.webp" 
+ src="https://adritian-demo.vercel.app/images/experience/DSPecialist_Logo_hu_4a201a841da4c602.webp" 
  alt=" logo"
  class="experience__company-logo"
  loading="lazy"
@@ -303,13 +303,13 @@ Project #2: Development of a wireless sensing system using AI and RF. This proje
  &lt;/div>
  
  &lt;div class="experience">
- &lt;a href="http://localhost:1313/experience/job-3/" class="experience__link">
+ &lt;a href="https://adritian-demo.vercel.app/experience/job-3/" class="experience__link">
  &lt;div class="experience__header">
  
  
  
  &lt;img 
- src="http://localhost:1313/images/experience/Versa_Logo_hu_fe7622a97c71dcb.webp" 
+ src="https://adritian-demo.vercel.app/images/experience/Versa_Logo_hu_fe7622a97c71dcb.webp" 
  alt=" logo"
  class="experience__company-logo"
  loading="lazy"
@@ -334,13 +334,13 @@ All the projects I worked on focused on cost optimization, so the microcontrolle
  &lt;/div>
  
  &lt;div class="experience">
- &lt;a href="http://localhost:1313/experience/job-2/" class="experience__link">
+ &lt;a href="https://adritian-demo.vercel.app/experience/job-2/" class="experience__link">
  &lt;div class="experience__header">
  
  
  
  &lt;img 
- src="http://localhost:1313/images/experience/Zigor_Logo_hu_e69adb3e1d7bc63.webp" 
+ src="https://adritian-demo.vercel.app/images/experience/Zigor_Logo_hu_e69adb3e1d7bc63.webp" 
  alt=" logo"
  class="experience__company-logo"
  loading="lazy"
@@ -366,13 +366,13 @@ I also took part in other power converter projects, where I designed PCBs for hi
  &lt;/div>
  
  &lt;div class="experience">
- &lt;a href="http://localhost:1313/experience/job-1/" class="experience__link">
+ &lt;a href="https://adritian-demo.vercel.app/experience/job-1/" class="experience__link">
  &lt;div class="experience__header">
  
  
  
  &lt;img 
- src="http://localhost:1313/images/experience/UPV_Logo_hu_559d6b8e7618de8a.webp" 
+ src="https://adritian-demo.vercel.app/images/experience/UPV_Logo_hu_559d6b8e7618de8a.webp" 
  alt=" logo"
  class="experience__company-logo"
  loading="lazy"
@@ -469,7 +469,7 @@ I was also involved in firmware tasks for ESP32 and TI devices, mostly communica
  
  
  
- &lt;img src="http://localhost:1313/images/experience/DSPecialist_Logo_hu_4a201a841da4c602.webp" alt=" logo"
+ &lt;img src="https://adritian-demo.vercel.app/images/experience/DSPecialist_Logo_hu_4a201a841da4c602.webp" alt=" logo"
  class="experience__company-logo" loading="lazy">
  
  &lt;div class="experience__meta">

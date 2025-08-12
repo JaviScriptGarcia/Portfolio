@@ -1,5 +1,5 @@
-baseURL = "https://adritian-demo.vercel.app/"
-title = "Javier García"
+baseURL = "https://javiergarciaserrano.com/"
+title = "Javier Serrano"
 languageCode = "en"
 
 # Exclude footer section from generating list pages (index.html and index.xml)
