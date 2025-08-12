@@ -3,6 +3,17 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.147.9"     # tu versión extended
+  HUGO_VERSION = "0.147.9"
   HUGO_ENV     = "production"
   NODE_VERSION = "22"
+
+# Producción: tu dominio final
+[context.production.environment]
+  HUGO_BASEURL = "https://javiergarciaserrano.com/"
+
+# Previews / branch deploys: usar URL de Netlify
+[context.deploy-preview.environment]
+  HUGO_BASEURL = "$DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+  HUGO_BASEURL = "$DEPLOY_PRIME_URL"
