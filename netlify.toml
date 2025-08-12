@@ -1,0 +1,10 @@
+# netlify.toml
+[build]
+  command = "hugo --gc --minify"   # si NO necesitas instalar nada en build
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.147.9"
+  HUGO_ENV = "production"
+  # Si necesitas Node por algo, añade:
+  # NODE_VERSION = "22"
