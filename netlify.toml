@@ -6,15 +6,59 @@
   HUGO_VERSION = "0.147.9"
   HUGO_ENV     = "production"
   NODE_VERSION = "22"
-  HUGO_EXTENDED = "true"   # por si acaso
+  HUGO_EXTENDED = "true"
+  # Usar variables de entorno para baseURL si están disponibles
+  HUGO_BASEURL = "https://javiergarciaserrano.com/"
 
-# Producción: usa TU dominio real
+# Producción: usa la baseURL del hugo.toml
 [context.production]
-  command = "npm ci && hugo --gc --minify -b https://javiergarciaserrano.com/"
+  command = "npm ci && hugo --gc --minify"
 
 # Deploy Previews (PRs) y Branch deploys: usa la URL de Netlify del despliegue
 [context.deploy-preview]
-  command = "npm ci && hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "npm ci && hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "npm ci && hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "npm ci && hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
+
+# Headers para assets estáticos
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/scss/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# Redirecciones para asegurar que las rutas funcionen
+[[redirects]]
+  from = "/css/*"
+  to = "/css/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/js/*"
+  to = "/js/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/scss/*"
+  to = "/scss/:splat"
+  status = 200

@@ -1,6 +1,9 @@
+# Configuración base - se puede sobrescribir con variables de entorno
 baseURL = "https://javiergarciaserrano.com/"
 title = "Javier Serrano"
 languageCode = "en"
+
+# Configuración para desarrollo local
 
 # Exclude footer section from generating list pages (index.html and index.xml)
 [outputs]
@@ -320,26 +323,27 @@ weight = 4
 # Plugins
 [params.plugins]
 
-# CSS Plugins
+# CSS Plugins - usando los archivos que realmente existen
 [[params.plugins.css]]
-URL = "css/custom.css"
+URL = "/css/bundle.min.5af790f26017eafeca0ac809d8dc6d8e4fb6236786996fa95301e87997c8299e.css"
 [[params.plugins.css]]
-URL = "css/adritian-icons.css"
-## Print css
-[[params.plugins.css]]
-URL = "css/bootstrap-print.css"
+URL = "/css/bootstrap-print.css"
 
-# JS Plugins
+# JS Plugins - usando los archivos que realmente existen
 [[params.plugins.js]]
-URL = "js/rad-animations.js"
+URL = "/js/rad-animations.js"
 [[params.plugins.js]]
-URL = "js/sticky-header.js"
+URL = "/js/sticky-header.js"
 [[params.plugins.js]]
-URL = "js/library/fontfaceobserver.js"
+URL = "/js/color-modes.js"
+[[params.plugins.js]]
+URL = "/js/smooth-scroll-init.js"
+[[params.plugins.js]]
+URL = "/js/search.js"
 
-# SCSS Plugins
-[[params.plugins.scss]]
-URL = "scss/adritian.scss"
+# SCSS Plugins - comentado hasta que se resuelva el problema
+# [[params.plugins.scss]]
+# URL = "/scss/adritian.min.1d242161f7ce36389701d3c16ad9ed32da65ab54dfe4e2cb8a6f8d538dfc481c.css"
 
 
 # theme/color style 
