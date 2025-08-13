@@ -7,8 +7,6 @@
   HUGO_ENV     = "production"
   NODE_VERSION = "22"
   HUGO_EXTENDED = "true"
-  # Usar variables de entorno para baseURL si están disponibles
-  HUGO_BASEURL = "https://javiergarciaserrano.com/"
 
 # Producción: usa la baseURL del hugo.toml
 [context.production]

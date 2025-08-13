@@ -2,6 +2,7 @@
 baseURL = "https://javiergarciaserrano.com/"
 title = "Javier Serrano"
 languageCode = "en"
+relativeURLs = true
 
 # Configuración para desarrollo local
 
@@ -323,11 +324,13 @@ weight = 4
 # Plugins
 [params.plugins]
 
-# CSS Plugins - usando los archivos que realmente existen
+# CSS Plugins
 [[params.plugins.css]]
-URL = "/css/bundle.min.5af790f26017eafeca0ac809d8dc6d8e4fb6236786996fa95301e87997c8299e.css"
-[[params.plugins.css]]
-URL = "/css/bootstrap-print.css"
+URL = "css/bootstrap-print.css"
+
+# SCSS Plugins (dejar que Hugo compile el SCSS del tema)
+[[params.plugins.scss]]
+URL = "scss/adritian.scss"
 
 # JS Plugins - usando los archivos que realmente existen
 [[params.plugins.js]]
