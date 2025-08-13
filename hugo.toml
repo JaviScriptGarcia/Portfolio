@@ -9,14 +9,14 @@ languageCode = "en"
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
-  footer = []
+#  footer = []
 
 # Explicitly prevent the footer section from generating any output
-[outputFormats.footerSection]
+#[outputFormats.footerSection]
   # Empty configuration to prevent any output
 
 # Specifically disable generation of these kinds for the footer content
-disableKinds = ["footerSection", "RSS"]
+#disableKinds = ["footerSection", "RSS"]
 
 [module]
 [[module.imports]]
@@ -59,7 +59,7 @@ target = "assets/js/vendor/bootstrap.bundle.min.js"
 
 [[module.mounts]]
 source = "node_modules/bootstrap-print-css/css/bootstrap-print.css"
-target = "assets/css/bootstrap-print.css"
+target = "static/css/bootstrap-print.css"
 
 
 [params]

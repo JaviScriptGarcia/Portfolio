@@ -1,19 +1,20 @@
 [build]
-  command = "npm ci && hugo --gc --minify"
   publish = "public"
+  command = "npm ci && hugo --gc --minify"
 
 [build.environment]
   HUGO_VERSION = "0.147.9"
   HUGO_ENV     = "production"
   NODE_VERSION = "22"
+  HUGO_EXTENDED = "true"   # por si acaso
 
-# Producción: tu dominio final
-[context.production.environment]
-  HUGO_BASEURL = "https://javiergarciaserrano.com/"
+# Producción: usa TU dominio real
+[context.production]
+  command = "npm ci && hugo --gc --minify -b https://javiergarciaserrano.com/"
 
-# Previews / branch deploys: usar URL de Netlify
-[context.deploy-preview.environment]
-  HUGO_BASEURL = "$DEPLOY_PRIME_URL"
+# Deploy Previews (PRs) y Branch deploys: usa la URL de Netlify del despliegue
+[context.deploy-preview]
+  command = "npm ci && hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
-[context.branch-deploy.environment]
-  HUGO_BASEURL = "$DEPLOY_PRIME_URL"
+[context.branch-deploy]
+  command = "npm ci && hugo --gc --minify -b $DEPLOY_PRIME_URL"
